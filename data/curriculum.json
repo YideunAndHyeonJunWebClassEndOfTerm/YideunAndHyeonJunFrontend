@@ -1,0 +1,140 @@
+{
+  "major_required": [
+    {
+      "code": "CSEE101",
+      "name": "컴퓨터과학개론",
+      "credit": 3,
+      "semester": 1,
+      "year": 1,
+      "prerequisites": [],
+      "description": "컴퓨터과학의 기본 개념과 전체적인 이해"
+    },
+    {
+      "code": "CSEE102", 
+      "name": "프로그래밍기초",
+      "credit": 3,
+      "semester": 1,
+      "year": 1,
+      "prerequisites": [],
+      "description": "C언어 기반 프로그래밍 기초"
+    },
+    {
+      "code": "CSEE103",
+      "name": "창의적공학설계",
+      "credit": 3,
+      "semester": 1,
+      "year": 1,
+      "prerequisites": [],
+      "description": "창의적 사고와 공학설계 능력 배양"
+    },
+    {
+      "code": "CSEE201",
+      "name": "자료구조",
+      "credit": 3,
+      "semester": 1,
+      "year": 2,
+      "prerequisites": ["CSEE102"],
+      "description": "기본적인 자료구조와 알고리즘"
+    },
+    {
+      "code": "CSEE202",
+      "name": "객체지향프로그래밍",
+      "credit": 3,
+      "semester": 1,
+      "year": 2,
+      "prerequisites": ["CSEE102"],
+      "description": "Java를 이용한 객체지향 프로그래밍"
+    },
+    {
+      "code": "CSEE203",
+      "name": "시스템프로그래밍",
+      "credit": 3,
+      "semester": 2,
+      "year": 2,
+      "prerequisites": ["CSEE102"],
+      "description": "Linux 환경에서의 시스템 프로그래밍"
+    }
+  ],
+  "major_elective": [
+    {
+      "code": "CSEE401",
+      "name": "웹프로그래밍",
+      "credit": 3,
+      "semester": 1,
+      "year": 2,
+      "prerequisites": ["CSEE102"],
+      "description": "HTML, CSS, JavaScript를 이용한 웹 개발",
+      "field": "웹개발"
+    },
+    {
+      "code": "CSEE402",
+      "name": "모바일프로그래밍",
+      "credit": 3,
+      "semester": 2,
+      "year": 3,
+      "prerequisites": ["CSEE202"],
+      "description": "Android 앱 개발",
+      "field": "모바일앱"
+    },
+    {
+      "code": "CSEE403",
+      "name": "기계학습",
+      "credit": 3,
+      "semester": 1,
+      "year": 3,
+      "prerequisites": ["CSEE201"],
+      "description": "기계학습 알고리즘과 응용",
+      "field": "AI머신러닝"
+    },
+    {
+      "code": "CSEE404",
+      "name": "게임프로그래밍",
+      "credit": 3,
+      "semester": 2,
+      "year": 3,
+      "prerequisites": ["CSEE202"],
+      "description": "Unity를 이용한 게임 개발",
+      "field": "게임개발"
+    },
+    {
+      "code": "CSEE405",
+      "name": "데이터마이닝",
+      "credit": 3,
+      "semester": 2,
+      "year": 3,
+      "prerequisites": ["CSEE201"],
+      "description": "빅데이터 분석과 데이터 마이닝",
+      "field": "데이터분석"
+    },
+    {
+      "code": "CSEE406",
+      "name": "운영체제",
+      "credit": 3,
+      "semester": 1,
+      "year": 3,
+      "prerequisites": ["CSEE203"],
+      "description": "운영체제의 구조와 원리",
+      "field": "시스템소프트웨어"
+    },
+    {
+      "code": "CSEE407",
+      "name": "네트워크프로그래밍",
+      "credit": 3,
+      "semester": 2,
+      "year": 3,
+      "prerequisites": ["CSEE203"],
+      "description": "네트워크 통신 프로그래밍",
+      "field": "시스템소프트웨어"
+    },
+    {
+      "code": "CSEE408",
+      "name": "인공지능",
+      "credit": 3,
+      "semester": 1,
+      "year": 4,
+      "prerequisites": ["CSEE201"],
+      "description": "인공지능의 기본 원리와 응용",
+      "field": "AI머신러닝"
+    }
+  ]
+} 
