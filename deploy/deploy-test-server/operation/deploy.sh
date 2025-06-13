@@ -1,13 +1,14 @@
 #!/bin/bash
 
-# TAG 파라미터 확인
+# TAG 파라미터 확인 (없으면 latest 사용)
 if [ -z "$1" ]; then
-    echo "사용법: ./deploy.sh <TAG>"
-    echo "예시: ./deploy.sh a2caa12"
-    exit 1
+    echo "🏷️  TAG가 지정되지 않았습니다. latest 태그를 사용합니다."
+    TAG="latest"
+    echo "TAG: $TAG"
+else
+    TAG=$1
+    echo "TAG: $TAG"
 fi
-
-TAG=$1
 
 echo "=== 자동 배포 시작 ==="
 echo "TAG: $TAG"

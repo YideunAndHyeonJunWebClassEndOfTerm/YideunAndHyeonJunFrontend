@@ -1,16 +1,14 @@
 #!/bin/bash
 
-# TAG 파라미터 확인
+# TAG 파라미터 확인 (없으면 latest 사용)
 if [ -z "$1" ]; then
-    echo "사용법: ./test-local.sh <TAG>"
-    echo "예시: ./test-local.sh ca60ea7"
-    echo ""
-    echo "현재 .env 파일의 TAG 확인:"
-    grep "TAG=" .env 2>/dev/null || echo "TAG가 설정되지 않았습니다."
-    exit 1
+    echo "🏷️  TAG가 지정되지 않았습니다. latest 태그를 사용합니다."
+    TAG="latest"
+    echo "TAG: $TAG"
+else
+    TAG=$1
+    echo "TAG: $TAG"
 fi
-
-TAG=$1
 
 echo "=== Operation 환경 로컬 테스트 시작 ==="
 echo "TAG: $TAG"
