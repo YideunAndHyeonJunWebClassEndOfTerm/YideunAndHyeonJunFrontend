@@ -16,4 +16,9 @@ docker images | grep "$TAG"
 echo "Docker Hub에 푸시 중..."
 docker compose push
 
+# latest 태그도 생성하고 푸시
+echo "latest 태그 생성 및 푸시 중..."
+docker tag hyeonjun0527/yideunandhyeonjun-frontend:$TAG hyeonjun0527/yideunandhyeonjun-frontend:latest
+docker push hyeonjun0527/yideunandhyeonjun-frontend:latest
+
 echo "빌드 및 푸시 완료!"
