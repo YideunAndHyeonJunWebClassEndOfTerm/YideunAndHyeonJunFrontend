@@ -94,56 +94,72 @@ else
     exit 1
 fi
 
-# EC2 서버에 배포 디렉토리 생성
-echo ""
-echo "📁 EC2 서버에 배포 디렉토리 생성 중..."
-ssh -i "$EC2_PEM_KEY_PATH" $EC2_USER@$EC2_HOST "mkdir -p $EC2_DEPLOY_PATH"
+# 배포 파일들이 이미 있는지 확인
+EXISTING_FILES=$(ssh -i "$EC2_PEM_KEY_PATH" $EC2_USER@$EC2_HOST "ls $EC2_DEPLOY_PATH/*.sh 2>/dev/null | wc -l" 2>/dev/null || echo "0")
 
-# operation 폴더의 모든 파일 전송
-echo ""
-echo "📤 operation 폴더 파일들 전송 중..."
+if [ "$EXISTING_FILES" -gt "0" ]; then
+    echo "🔄 파일들이 이미 존재합니다. SSH 접속만 진행합니다."
+    SKIP_TRANSFER=true
+else
+    # EC2 서버에 배포 디렉토리 생성
+    echo ""
+    echo "📁 EC2 서버에 배포 디렉토리 생성 중..."
+    ssh -i "$EC2_PEM_KEY_PATH" $EC2_USER@$EC2_HOST "mkdir -p $EC2_DEPLOY_PATH"
 
-FILES=(
-    "deploy.sh"
-    "deploy-simple.sh"
-    "docker-compose.yml"
-    ".env"
-    "setup-server.sh"
-    "cleanup.sh"
-    "test-local.sh"
-    "reboot-server.sh"
-    "setup-lightweight.sh"
-)
+    # operation 폴더의 모든 파일 전송
+    echo ""
+    echo "📤 operation 폴더 파일들 전송 중..."
 
-for file in "${FILES[@]}"; do
-    if [ -f "$file" ]; then
-        echo "  📄 $file 전송 중..."
-        scp -i "$EC2_PEM_KEY_PATH" "$file" $EC2_USER@$EC2_HOST:$EC2_DEPLOY_PATH/
-        if [ $? -eq 0 ]; then
-            echo "    ✅ $file 전송 완료"
+    FILES=(
+        "deploy-simple.sh"
+        "docker-compose.yml"
+        ".env"
+        "setup-server.sh"
+        "cleanup.sh"
+        "reboot-server.sh"
+        "setup-lightweight.sh"
+    )
+
+    for file in "${FILES[@]}"; do
+        if [ -f "$file" ]; then
+            echo "  📄 $file 전송 중..."
+            scp -i "$EC2_PEM_KEY_PATH" "$file" $EC2_USER@$EC2_HOST:$EC2_DEPLOY_PATH/
+            if [ $? -eq 0 ]; then
+                echo "    ✅ $file 전송 완료"
+            else
+                echo "    ❌ $file 전송 실패"
+            fi
         else
-            echo "    ❌ $file 전송 실패"
+            echo "    ⚠️ $file 파일이 없습니다."
         fi
-    else
-        echo "    ⚠️ $file 파일이 없습니다."
-    fi
-done
+    done
 
-# 실행 권한 부여
-echo ""
-echo "⚙️ EC2 서버에서 실행 권한 설정 중..."
-ssh -i "$EC2_PEM_KEY_PATH" $EC2_USER@$EC2_HOST "cd $EC2_DEPLOY_PATH && chmod +x *.sh"
+    # 실행 권한 부여
+    echo ""
+    echo "⚙️ EC2 서버에서 실행 권한 설정 중..."
+    ssh -i "$EC2_PEM_KEY_PATH" $EC2_USER@$EC2_HOST "cd $EC2_DEPLOY_PATH && chmod +x *.sh"
+    
+    SKIP_TRANSFER=false
+fi
 
+# 결과 메시지
+if [ "$SKIP_TRANSFER" = true ]; then
+    echo "📁 EC2 서버에 이미 배포 파일들이 존재합니다."
+    echo "🔄 이미 설정된 환경입니다. SSH로 바로 접속합니다."
+else
+    echo ""
+    echo "🎉 전송 완료!"
+    echo ""
+    echo "📍 EC2 서버 파일 위치: $EC2_DEPLOY_PATH"
+    echo ""
+    echo "🚀 다음 단계:"
+    echo "1. ./setup-server.sh     # 서버 초기 설정 (최초 1회)"
+    echo "2. ./reboot-server.sh    # 서버 재부팅 (최초 1회)"
+    echo "3. ./deploy-simple.sh    # 애플리케이션 배포"
+    echo ""
+fi
+
+echo "🔗 EC2 서버로 SSH 접속 중..."
+echo "💡 배포 디렉토리($EC2_DEPLOY_PATH)에서 시작합니다."
 echo ""
-echo "🎉 전송 완료!"
-echo ""
-echo "📍 EC2 서버 파일 위치: $EC2_DEPLOY_PATH"
-echo ""
-echo "🚀 다음 단계 (EC2 서버에서 실행):"
-echo "1. ssh -i $EC2_PEM_KEY_PATH $EC2_USER@$EC2_HOST"
-echo "2. cd $EC2_DEPLOY_PATH"
-echo "3. ./setup-server.sh     # 서버 초기 설정 (최초 1회)"
-echo "4. ./reboot-server.sh    # 서버 재부팅 (최초 1회)"
-echo "5. ./deploy-simple.sh    # 애플리케이션 배포"
-echo ""
-echo "💡 이제 EC2에서 바로 배포할 수 있습니다!" 
+ssh -i "$EC2_PEM_KEY_PATH" -t $EC2_USER@$EC2_HOST "cd $EC2_DEPLOY_PATH && exec \$SHELL -l" 
