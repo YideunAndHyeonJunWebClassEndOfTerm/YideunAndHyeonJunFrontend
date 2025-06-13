@@ -9,15 +9,16 @@ deploy/
 │   │   ├── frontend.Dockerfile
 │   │   ├── .env
 │   │   ├── build-and-push.sh   # 빌드 & 푸시
-│   │   ├── build-and-push.bat
 │   │   ├── test-local.sh       # 로컬 테스트
-│   │   ├── test-local.bat
-│   │   ├── cleanup.sh          # 환경 정리
-│   │   └── cleanup.bat
+│   │   └── cleanup.sh          # 환경 정리
 │   └── operation/              # 운영환경 (배포용)
 │       ├── docker-compose.yml
 │       ├── .env
-│       └── deploy.sh
+│       ├── deploy.sh
+│       ├── test-local.sh       # 로컬 테스트
+│       ├── cleanup.sh          # 환경 정리
+│       ├── setup-server.sh     # 서버 초기 설정
+│       └── reboot-server.sh    # 서버 재부팅
 ```
 
 ## 로컬환경에서 할 일
@@ -46,37 +47,61 @@ docker compose push
 
 **또는 스크립트 사용:**
 ```bash
-# Linux/Mac
 ./build-and-push.sh
-
-# Windows
-build-and-push.bat
 ```
 
 ### 3. 로컬 테스트
 ```bash
 # 로컬에서 컨테이너 실행 및 테스트
-./test-local.sh     # Linux/Mac
-# 또는
-test-local.bat      # Windows
+./test-local.sh
 
-# 브라우저에서 http://localhost:8080 접속하여 확인
+# 브라우저에서 http://localhost:3000 접속하여 확인
 ```
 
 ### 4. 환경 정리
 ```bash
-# 컨테이너 중지 및 정리
-./cleanup.sh        # Linux/Mac
-# 또는
-cleanup.bat         # Windows
+# 컨테이너 중지 및 정리 (시스템 정리 자동 실행)
+./cleanup.sh
 ```
 
-## 배포환경으로 파일 이동
+## 배포환경 설정
 
+### 방법 1: Git Clone (추천 🌟)
+```bash
+# 서버에서 실행
+curl -O https://raw.githubusercontent.com/your-username/YideunAndHyeonJunFrontend/main/deploy/deploy-test-server/operation/setup-repo.sh
+chmod +x setup-repo.sh
+./setup-repo.sh
+```
+
+### 방법 2: 수동 파일 복사
 operation 폴더를 배포 서버로 복사:
-- FileZilla 등 FTP 클라이언트 사용
-- `scp` 명령어 사용
-- Git clone 사용
+```bash
+scp -r operation/ ec2-user@43.201.71.192:/home/ec2-user/
+```
+
+## 서버 초기 설정 (최초 1회만)
+
+새로운 서버에서 최초 1회만 실행하세요:
+
+```bash
+# operation 폴더 업로드 후
+cd operation/
+chmod +x *.sh
+
+# 서버 초기 설정 (Zsh, Docker, 플러그인 등)
+./setup-server.sh
+
+# 재부팅 (권장)
+./reboot-server.sh
+```
+
+### 설치되는 항목
+- **패키지**: zsh, git, htop, maven, docker, tree
+- **Oh My Zsh**: 터미널 환경 개선
+- **Zsh 플러그인**: autosuggestions, syntax-highlighting  
+- **Docker Compose**: v2.35.1
+- **Docker 권한**: ec2-user를 docker 그룹에 추가
 
 ## 배포환경에서 할 일
 
@@ -101,7 +126,7 @@ docker compose logs -f --tail=200 frontend
 
 ## 포트 설정
 
-- 개발환경: `http://localhost:8080`
-- 운영환경: `http://서버IP:8080`
+- 개발환경: `http://localhost:3000`
+- 운영환경: `http://서버IP:3000`
 
 포트를 변경하려면 `docker-compose.yml`의 `ports` 섹션을 수정하세요.

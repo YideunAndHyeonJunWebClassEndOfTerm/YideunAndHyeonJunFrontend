@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "=== 로컬 테스트 환경 정리 시작 ==="
+echo "=== Operation 환경 정리 시작 ==="
 
 # 컨테이너 중지 및 제거
 echo "Docker 컨테이너 중지 및 제거 중..."
@@ -18,4 +18,4 @@ docker system prune -f
 echo "✅ 시스템 정리 완료"
 
 echo ""
-echo "✅ 로컬 테스트 환경 정리 완료!"
+echo "✅ Operation 환경 정리 완료!"
