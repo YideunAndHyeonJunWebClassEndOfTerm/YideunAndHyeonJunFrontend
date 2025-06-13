@@ -200,7 +200,7 @@ function displayProfessors(professors) {
                                 `;
                                 descriptionElement.append(errorHtml);
                             }
-                        } else {
+            } else {
                             console.error(`[ERROR] ${professor.name} 카드 요소를 찾을 수 없습니다. 이름: "${professor.name}"`);
                         }
                         
@@ -271,8 +271,8 @@ function loadSearchHistory() {
                 <p>교수님 추천 기능을 사용해보세요!</p>
             </div>
         `);
-        return;
-    }
+                return;
+            }
 
     const clearAllButton = `
         <div style="text-align: center; margin-bottom: 20px;">

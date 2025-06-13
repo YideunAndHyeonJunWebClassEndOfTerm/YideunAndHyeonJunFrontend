@@ -162,27 +162,6 @@ body {
     font-size: 1.1em;
 }
 
-.field-category {
-    margin-bottom: 30px;
-    padding: 20px;
-    background: #f8f9fa;
-    border-radius: 10px;
-    border: 1px solid #e2e8f0;
-}
-
-.field-category h3 {
-    color: #2d3748;
-    margin-bottom: 15px;
-    font-size: 1.2em;
-    border-bottom: 1px solid #cbd5e0;
-    padding-bottom: 8px;
-}
-
-.field-category h3 i {
-    margin-right: 8px;
-    color: #667eea;
-}
-
 .form-control {
     width: 100%;
     padding: 12px 15px;

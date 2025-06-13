@@ -8,7 +8,7 @@ const professorsData = [
         email: "rudvlf0413@kangwon.ac.kr",
         specialties: ["자연어처리", "데이터마이닝", "기계학습"],
         description: "자연어 처리와 데이터 마이닝 분야의 전문가로, 텍스트 데이터 분석과 기계학습 기술을 활용한 연구를 진행하고 있습니다. 특히 한국어 자연어 처리 기술 개발에 집중하며, 실용적인 언어 모델 구축에 기여하고 있습니다.",
-        papers: ["한국어 텍스트 분류를 위한 BERT 기반 딥러닝 모델", "소셜 미디어 데이터 마이닝을 통한 감정 분석 연구", "기계학습 기반 자동 문서 요약 시스템"]
+        papers: ["See, caption, cluster: Large-scale image analysis using captioning and topic modeling", "Restoring and Mining the Records of the Joseon Dynasty via Neural Language Modeling and Machine Translation", "Whose Opinion Matters? Analyzing Relationships Between Bitcoin Prices and User Groups in Online Community"]
     },
     {
         name: "김도형",
@@ -19,7 +19,7 @@ const professorsData = [
         email: "d.kim@kangwon.ac.kr",
         specialties: ["컴퓨터네트워크", "미래인터넷아키텍처", "머신러닝네트워킹"],
         description: "차세대 인터넷 아키텍처와 머신러닝 기반 네트워킹 기술 연구를 수행하고 있습니다. ICN(Information-Centric Networking) 기술과 지능형 네트워크 시스템 개발에 전문성을 가지고 있으며, 미래 네트워크 인프라 구축에 기여하고 있습니다.",
-        papers: ["ICN 기반 콘텐츠 라우팅 최적화 알고리즘", "머신러닝을 활용한 네트워크 트래픽 예측", "5G 네트워크에서의 지능형 자원 할당 기법"]
+        papers: ["Design and Implementation of a Blockchain-Based Open Peer Review System Using Hyperledger Fabric", "Rescuing QUIC Flows from Countermeasures against UDP Floodig Attacks", "RepCoder: an automated program repair framework for probability-based program synthesis"]
     },
     {
         name: "김아욱",
@@ -30,7 +30,7 @@ const professorsData = [
         email: "kimauk@kangwon.ac.kr",
         specialties: ["인간AI상호작용", "모바일컴퓨팅", "데이터사이언스"],
         description: "인간과 인공지능의 상호작용 연구를 통해 사용자 친화적인 AI 시스템 개발에 집중하고 있습니다. 모바일 환경에서의 데이터 활용과 사용자 경험 개선을 위한 연구를 수행하며, HCI 분야의 혁신적인 솔루션을 제공하고 있습니다.",
-        papers: ["모바일 환경에서의 사용자 행동 패턴 분석", "AI 챗봇의 사용자 만족도 평가 모델", "스마트폰 센서 데이터를 활용한 행동 인식"]
+        papers: ["Effects of in-vehicle auditory interactions on takeover performance in SAE L2 semi-automated vehicles", "Associations between Nicotine Dependence, Smartphone Usage Patterns, and Expected Compliance with a Smoking Cessation Application among Smokers", "Exploring Context-Aware Mental Health Self-Tracking Using Multimodal Smart Speakers in Home Environments"]
     },
     {
         name: "김용석",
@@ -41,7 +41,7 @@ const professorsData = [
         email: "yskim@kangwon.ac.kr",
         specialties: ["운영체제", "임베디드시스템", "병렬처리"],
         description: "시스템 소프트웨어와 임베디드 시스템 분야의 전문가로, 효율적인 운영체제 설계와 병렬 처리 시스템 개발에 중점을 두고 있습니다. IoT 기기와 실시간 시스템을 위한 최적화된 소프트웨어 솔루션을 연구하고 있습니다.",
-        papers: ["실시간 임베디드 운영체제 스케줄링 최적화", "멀티코어 시스템에서의 병렬 프로그래밍 기법", "IoT 디바이스를 위한 경량 운영체제 설계"]
+        papers: ["플래시 메모리 기반의 F2FS 파일시스템을 위한 인덱스 구조의 개선", "선박용 GPS 플로터의 위치정보 추출을 통한 항적 데이터 분석 방법", "대용량 SSD를 위한 다단계 플래시 변환계층"]
     },
     {
         name: "김윤",
@@ -52,7 +52,7 @@ const professorsData = [
         email: "yooni@kangwon.ac.kr",
         specialties: ["딥러닝", "컴퓨터비전", "의료영상분석"],
         description: "딥러닝과 컴퓨터 비전 기술을 활용한 의료 영상 분석 연구의 선두주자입니다. 의료진단 보조 시스템 개발과 영상 처리 알고리즘 최적화를 통해 헬스케어 분야의 AI 기술 발전에 기여하고 있습니다.",
-        papers: ["CNN 기반 의료 영상 진단 시스템", "흉부 X-ray 영상에서의 폐질환 자동 검출", "딥러닝을 활용한 MRI 영상 분할 기법"]
+        papers: ["Very fast, high-resolution aggregation 3D detection CAM to quickly and accurately find facial fracture areas", "Multi-modality multi-task model for mRS prediction using diffusion-weighted resonance imaging", "Deep Learning-Based Real-Time Organ Localization and Transit Time Estimation in Wireless Capsule Endoscopy"]
     },
     {
         name: "김종민",
@@ -63,7 +63,7 @@ const professorsData = [
         email: "jongmin.kim@kangwon.ac.kr",
         specialties: ["컴퓨터그래픽스", "가상현실", "수치최적화"],
         description: "컴퓨터 그래픽스와 가상현실 기술의 전문가로, 몰입형 VR 환경 구축과 실시간 렌더링 기술 개발에 집중하고 있습니다. 기계학습을 활용한 그래픽스 최적화와 사용자 경험 향상을 위한 연구를 수행하고 있습니다.",
-        papers: ["실시간 광선 추적을 위한 GPU 최적화 기법", "VR 환경에서의 물리 기반 시뮬레이션", "기계학습을 활용한 3D 모델 생성"]
+        papers: ["Anisotropic SpiralNet for 3D Shape Completion and Denoising", "Human motion reconstruction using deep transformer networks", "Robust methods for estimating the orientation and position of IMU and MARG sensors"]
     },
     {
         name: "문양세",
@@ -74,7 +74,7 @@ const professorsData = [
         email: "ysmoon@kangwon.ac.kr",
         specialties: ["데이터베이스", "빅데이터처리", "클라우드컴퓨팅"],
         description: "대용량 데이터 처리와 클라우드 컴퓨팅 환경에서의 데이터베이스 최적화 연구를 선도하고 있습니다. 스마트 시티와 IoT 환경에서 생성되는 빅데이터의 효율적 관리와 분석 시스템 개발에 전문성을 가지고 있습니다.",
-        papers: ["분산 데이터베이스 시스템의 성능 최적화", "클라우드 환경에서의 빅데이터 처리 프레임워크", "스마트 시티 데이터 분석을 위한 실시간 처리 시스템"]
+        papers: ["Domain Transformation to Graphs and GraphSAGE-Based Embedding for Performance Enhancement in Time-Series Classification", "쿠버네티스와 Ceph 환경을 활용한 GraphSAGE 분산 학습 프레임워크", "효율적인 학습 모델 버저닝을 지원하는 Kubernetes 기반 분산 빅데이터 처리 프레임워크"]
     },
     {
         name: "박연수",
@@ -85,7 +85,7 @@ const professorsData = [
         email: "yeonsu.park@kangwon.ac.kr",
         specialties: ["빅데이터", "데이터베이스", "데이터분석"],
         description: "빅데이터 플랫폼과 분산 데이터베이스 시스템 전문가로, 대규모 데이터 처리 및 실시간 분석 기술 개발에 집중하고 있습니다. 데이터 중심의 의사결정 지원 시스템과 지능형 데이터 관리 솔루션을 연구하고 있습니다.",
-        papers: ["하둡 기반 대용량 데이터 분석 플랫폼", "NoSQL 데이터베이스 성능 벤치마킹", "스트리밍 데이터 처리를 위한 아키텍처 설계"]
+        papers: ["QaaD (Query-as-a-Data): Scalable Execution of Massive Number of Small Queries in Spark", "G-CARE: A Framework for Performance Benchmarking of Cardinality Estimation Techniques for Subgraph Matching"]
     },
     {
         name: "박치현",
@@ -96,7 +96,7 @@ const professorsData = [
         email: "chihyun@kangwon.ac.kr",
         specialties: ["생물정보학", "머신러닝", "바이오데이터분석"],
         description: "생명과학과 컴퓨터 과학의 융합 연구를 통해 생물정보학 분야를 선도하고 있습니다. 유전체 데이터 분석과 단백질 구조 예측을 위한 머신러닝 기법 개발에 집중하며, 정밀의학 발전에 기여하고 있습니다.",
-        papers: ["유전체 시퀀스 분석을 위한 머신러닝 알고리즘", "단백질 구조 예측 모델의 정확도 향상", "생물학적 네트워크 분석을 통한 질병 유전자 발견"]
+        papers: ["KNU-DTI: KNowledge United Drug-Target Interaction prediction", "De novo drug design through gradient-based regularized search in information-theoretically controlled latent space", "DrDiff: Drug Response Prediction Through Controllable Diffusion-GE and Graph Attention Network"]
     },
     {
         name: "송원준",
@@ -107,7 +107,7 @@ const professorsData = [
         email: "wjsong@kangwon.ac.kr",
         specialties: ["컴퓨터아키텍처", "시스템보안", "하드웨어보안"],
         description: "컴퓨터 시스템의 하드웨어 레벨 보안과 안전한 컴퓨터 아키텍처 설계 연구를 수행하고 있습니다. 사이드채널 공격 방어와 신뢰할 수 있는 컴퓨팅 환경 구축을 위한 혁신적인 보안 기술 개발에 전문성을 가지고 있습니다.",
-        papers: ["사이드채널 공격 탐지 및 방어 기법", "신뢰실행환경 기반 보안 아키텍처", "하드웨어 취약점 분석 및 대응 방안"]
+        papers: ["DIMScern: A Framework for Discerning DIMSE Services on Remote Medical Devices", "Rescuing QUIC Flows from Countermeasures against UDP Floodig Attacks", "비 문서화 명령어 탐색 퍼저의 명령어 실행 정보 기반 길이 결정 방법"]
     },
     {
         name: "이구연",
@@ -118,7 +118,7 @@ const professorsData = [
         email: "leegyeon@kangwon.ac.kr",
         specialties: ["네트워크보안", "이동통신", "통신프로토콜"],
         description: "네트워크 통신과 보안 분야의 베테랑 연구자로, 안전하고 효율적인 통신 프로토콜 설계와 네트워크 보안 시스템 개발에 오랜 경험을 가지고 있습니다. 차세대 이동통신과 IoT 네트워크 보안 기술 연구를 수행하고 있습니다.",
-        papers: ["무선 네트워크 보안 프로토콜 설계", "IoT 환경에서의 경량 암호화 기법", "모바일 통신망의 침입 탐지 시스템"]
+        papers: ["허용 지연 시간을 갖는 실시간 화상 감시 카메라 시스템의 최적 구성 연구", "Dialogflow를 이용한 음성 기반 대화형 서비스", "다중 서비스 시스템에서의 효율적인 이용 순서"]
     },
     {
         name: "이다영",
@@ -129,7 +129,7 @@ const professorsData = [
         email: "dayoung08@kangwon.ac.kr",
         specialties: ["클라우드시스템", "멀티미디어시스템", "시스템소프트웨어"],
         description: "클라우드 환경에서의 시스템 소프트웨어 최적화와 멀티미디어 처리 시스템 개발 전문가입니다. 분산 시스템과 임베디드 환경에서의 효율적인 자원 관리 및 성능 최적화 기술 연구에 집중하고 있습니다.",
-        papers: ["클라우드 환경에서의 멀티미디어 스트리밍 최적화", "분산 시스템의 부하 균형 알고리즘", "임베디드 멀티미디어 시스템 설계"]
+        papers: ["Cost-Effective, Quality-Oriented Transcoding of Live-Streamed Video on Edge-Servers", "Video File Allocation for Wear-Leveling in Distributed Storage Systems With Heterogeneous Solid-State-Disks (SSDs)", "Quality-Aware Transcoding Task Allocation Under Limited Power in Live-Streaming Systems"]
     },
     {
         name: "이재권",
@@ -140,7 +140,7 @@ const professorsData = [
         email: "jaekwon.lee@kangwon.ac.kr",
         specialties: ["소프트웨어공학", "인공지능", "임베디드AI"],
         description: "소프트웨어 공학 방법론과 AI 기술의 융합 연구를 통해 지능형 소프트웨어 개발 프로세스를 혁신하고 있습니다. 임베디드 시스템에서의 AI 활용과 자동화된 소프트웨어 개발 도구 연구에 전문성을 가지고 있습니다.",
-        papers: ["AI 기반 소프트웨어 테스팅 자동화", "임베디드 시스템에서의 경량 AI 모델", "소프트웨어 품질 예측을 위한 머신러닝"]
+        papers: ["Probabilistic Safe WCET Estimation for Weakly Hard Real-time Systems at Design Stages", "Fuzzing for CPS Mutation Testing", "Optimal priority assignment for real-time systems: a coevolution-based approach"]
     },
     {
         name: "이창기",
@@ -151,7 +151,7 @@ const professorsData = [
         email: "leeck@kangwon.ac.kr",
         specialties: ["자연언어처리", "정보검색", "텍스트마이닝"],
         description: "자연어 처리와 정보 검색 기술의 전문가로, 대용량 텍스트 데이터에서 의미 있는 정보를 추출하고 검색하는 시스템 개발에 집중하고 있습니다. 한국어 정보 검색 성능 향상과 지능형 검색 엔진 구축 연구를 수행하고 있습니다.",
-        papers: ["한국어 정보 검색 시스템의 성능 향상 기법", "텍스트 마이닝을 활용한 트렌드 분석", "의미 기반 문서 검색 알고리즘"]
+        papers: ["형태소 수준의 BERT 임베딩을 통한 한국어 상호참조해결", "군집 알고리즘과 NSP를 이용한 문서 단위 기계 번역 데이터 증강", "문서 단위 기계 번역 성능 향상을 위한 데이터 증강 기법"]
     },
     {
         name: "이헌길",
@@ -162,7 +162,7 @@ const professorsData = [
         email: "hglee@kangwon.ac.kr",
         specialties: ["분산처리", "센서네트워크", "네트워크보안"],
         description: "분산 컴퓨팅과 무선 센서 네트워크 분야의 전문가로, IoT 환경에서의 효율적인 데이터 처리와 보안 기술 개발에 집중하고 있습니다. 대규모 분산 시스템의 안정성과 보안성 향상을 위한 연구를 수행하고 있습니다.",
-        papers: ["무선 센서 네트워크의 에너지 효율적 라우팅", "분산 시스템에서의 합의 알고리즘 최적화", "IoT 보안을 위한 경량 인증 프로토콜"]
+        papers: ["Adaptive Square-Shaped Trajectory-Based Service Location Protocol in Wireless Sensor Networks", "제한된 자원의 무선 단말기를 위한 종단간 보안을 제공하는 WTLSW프로토콜 및 프록시 모델", "센서네트워크에서의 프록시 트라젝토리 기반 데이터 저장 기법"]
     },
     {
         name: "임현승",
@@ -173,7 +173,7 @@ const professorsData = [
         email: "hsim@kangwon.ac.kr",
         specialties: ["프로그래밍언어", "의료AI", "딥러닝"],
         description: "프로그래밍 언어 이론과 의료 인공지능의 융합 연구를 선도하고 있습니다. 안전하고 효율적인 프로그래밍 언어 설계와 의료 데이터 분석을 위한 딥러닝 기술 개발에 전문성을 가지고 있으며, 헬스케어 AI 솔루션 구축에 기여하고 있습니다.",
-        papers: ["의료 진단을 위한 딥러닝 모델 검증", "함수형 프로그래밍 언어 설계 및 구현", "의료 AI의 신뢰성 검증 방법론"]
+        papers: ["단일 리드 심전도 데이터를 이용한 심혈관 질환 예측", "Medical Data Analysis Using AutoML Frameworks", "Predicting the Progression of Mild Cognitive Impairment to Alzheimer's Dementia Using Recurrent Neural Networks With a Series of Neuropsychological Tests"]
     },
     {
         name: "정인범",
@@ -184,7 +184,7 @@ const professorsData = [
         email: "ibjung@kangwon.ac.kr",
         specialties: ["운영체제", "IoT시스템", "임베디드소프트웨어"],
         description: "IoT와 임베디드 시스템을 위한 운영체제 및 소프트웨어 아키텍처 연구의 전문가입니다. 스마트 환경에서의 효율적인 자원 관리와 실시간 시스템 최적화를 통해 차세대 IoT 플랫폼 개발에 기여하고 있습니다.",
-        papers: ["IoT 디바이스를 위한 경량 운영체제", "스마트 홈 시스템의 실시간 데이터 처리", "임베디드 소프트웨어 개발 방법론"]
+        papers: ["라이다 기반 실내 자율주행 차량에서 신경망 학습을 사용한 성능평가", "Neural Network Models for Driving Control of Indoor Autonomous Vehicles in Mobile Edge Computing", "Smart Parking Lot Based on Edge Cluster Computing for Full Self-Driving Vehicles"]
     },
     {
         name: "최미정",
@@ -195,7 +195,7 @@ const professorsData = [
         email: "mjchoi@kangwon.ac.kr",
         specialties: ["네트워크트래픽분석", "M2M통신", "이상행위탐지"],
         description: "네트워크 트래픽 분석과 이상 행위 탐지 분야의 전문가로, M2M 통신과 모바일 네트워크의 자율적 관리 시스템 개발에 집중하고 있습니다. 지능형 네트워크 모니터링과 보안 위협 탐지 기술 연구를 수행하고 있습니다.",
-        papers: ["모바일 네트워크 트래픽 이상 탐지 알고리즘", "M2M 통신에서의 자율 관리 시스템", "네트워크 보안을 위한 행동 분석 기법"]
+        papers: ["머신 러닝을 활용한 스마트 컨트랙트 취약점 탐지 연구 동향", "바이너리 파일에서 사용된 오픈소스 소프트웨어 재사용 탐지 연구", "바이너리 파일에서 SBOM 생성을 위한 오픈소스 소프트웨어 재사용 탐지 아키텍처"]
     },
     {
         name: "최우혁",
@@ -206,7 +206,7 @@ const professorsData = [
         email: "woohyeok.choi@kangwon.ac.kr",
         specialties: ["디지털헬스", "센서데이터분석", "헬스케어AI"],
         description: "디지털 헬스케어와 웨어러블 센서 데이터 분석 전문가로, 개인화된 건강 관리 시스템과 예방 의학을 위한 AI 기술 개발에 집중하고 있습니다. 인간 중심의 헬스케어 AI 솔루션 구축을 통해 삶의 질 향상에 기여하고 있습니다.",
-        papers: ["웨어러블 센서 기반 건강 모니터링 시스템", "AI를 활용한 개인화 운동 처방", "디지털 치료제 효과성 평가 모델"]
+        papers: ["Effects of in-vehicle auditory interactions on takeover performance in SAE L2 semi-automated vehicles", "FamilyScope: Visualizing Affective Aspects of Family Social Interactions using Passive Sensor Data", "K-EmoPhone: A Mobile and Wearable Dataset with In-Situ Emotion, Stress, and Attention Labels"]
     },
     {
         name: "최황규",
@@ -217,7 +217,7 @@ const professorsData = [
         email: "hkchoi@kangwon.ac.kr",
         specialties: ["데이터베이스시스템", "클라우드컴퓨팅", "분산데이터베이스"],
         description: "대용량 데이터베이스 시스템과 클라우드 환경에서의 데이터 관리 기술 전문가입니다. 분산 데이터베이스 최적화와 클라우드 기반 빅데이터 처리 플랫폼 개발을 통해 차세대 데이터 인프라 구축에 기여하고 있습니다.",
-        papers: ["클라우드 데이터베이스 성능 최적화 기법", "분산 데이터베이스의 일관성 보장 알고리즘", "빅데이터 처리를 위한 인메모리 시스템"]
+        papers: ["전기차 충전설비에 있어서 도로교통량 데이터를 기반으로 한 충전수요예측 모델 연구", "A Study on the Improvement of Electrified Railway Inducing Voltage Calculation Algorithm", "원-핫 인코딩을 이용한 딥러닝 단기 전력수요 예측모델"]
     },
     {
         name: "하진영",
@@ -228,7 +228,7 @@ const professorsData = [
         email: "jyha@kangwon.ac.kr",
         specialties: ["패턴인식", "인공지능", "인간컴퓨터상호작용"],
         description: "패턴 인식과 인공지능 기술을 활용한 HCI 시스템 개발의 전문가입니다. 사용자의 행동 패턴 분석과 지능형 인터페이스 설계를 통해 직관적이고 효율적인 인간-컴퓨터 상호작용 환경 구축에 집중하고 있습니다.",
-        papers: ["제스처 인식을 위한 딥러닝 모델", "지능형 사용자 인터페이스 설계", "컴퓨터 비전 기반 감정 인식 시스템"]
+        papers: ["공공 자전거 수요 예측을 위한 사이킷런의 지도 기계 학습 모델 성능 비교", "공공자전거 이용 현황 데이터 분석 및 시각화", "텐서플로를 이용한 온라인 쇼핑몰 카테고리 자동화 시스템 구축"]
     },
     {
         name: "김우주",
@@ -239,7 +239,7 @@ const professorsData = [
         email: "woojoo.kim@kangwon.ac.kr",
         specialties: ["인간공학", "가상증강현실", "3D인터페이스"],
         description: "인간공학과 메타버스 기술의 전문가로, 가상현실과 증강현실 환경에서의 3D 사용자 인터페이스 설계에 집중하고 있습니다. 사용자 경험 최적화와 몰입형 인터랙션 기술 개발을 통해 차세대 메타버스 플랫폼 구축에 기여하고 있습니다.",
-        papers: ["VR 환경에서의 3D 인터페이스 설계 가이드라인", "증강현실을 활용한 산업용 교육 시스템", "메타버스 환경에서의 사용자 경험 평가"]
+        papers: ["Revisiting sensor-based intelligent fall risk assessment for older people: A systematic review", "TouchView: Mid-Air Touch on Zoomable 2D View for Distant Freehand Selection on a Virtual Reality User Interface", "Pseudo-haptic button for improving user experience of mid-air interaction in VR"]
     },
     {
         name: "손경호",
@@ -250,7 +250,7 @@ const professorsData = [
         email: "khson@kangwon.ac.kr",
         specialties: ["사이버보안", "IoT보안", "개인정보보호"],
         description: "사이버보안과 IoT 융합보안 분야의 전문가로, 차세대 정보보호 시스템 개발과 개인정보보호 기술 연구에 집중하고 있습니다. 스마트 환경에서의 종합적인 보안 솔루션 구축과 정보보증 기술 개발에 전문성을 가지고 있습니다.",
-        papers: ["IoT 환경에서의 통합 보안 프레임워크", "개인정보보호를 위한 프라이버시 보존 기법", "사이버 위협 인텔리전스 시스템"]
+        papers: ["Endpoint Device Risk-Scoring Algorithm Proposal for Zero Trust", "MyData Personal Data Store Model(PDS) to Enhance Information Security for Guarantee the Self-determination rights", "제로 트러스트(Zero-Trust) 기반의 스마트시티 공급망 보안 모델 연구"]
     },
     {
         name: "이동재",
@@ -261,7 +261,7 @@ const professorsData = [
         email: "dongjae.lee@kangwon.ac.kr",
         specialties: ["암호학", "양자컴퓨팅"],
         description: "융합보안 분야의 전문가로, 다양한 IT 환경에서의 통합 보안 솔루션 개발에 집중하고 있습니다. 신기술과 보안의 융합을 통한 혁신적인 보안 체계 구축 연구를 수행하고 있습니다.",
-        papers: ["양자 컴퓨팅 환경에서의 암호화 기법", "차세대 암호 알고리즘 설계", "포스트 양자 암호 시스템 구현"]
+        papers: ["Improved Quantum Rebound Attacks on Double Block Length Hashing with Round-Reduced AES-256 and ARIA-256", "Accurate False-Positive Probability of Multiset-Based Demirci-Selçuk Meet-in-the-Middle Attacks", "A Practical Ciphertext-Only Attack on GMR-2 System"]
     },
     {
         name: "이병기",
@@ -272,7 +272,7 @@ const professorsData = [
         email: "bkyi@kangwon.ac.kr",
         specialties: ["의료빅데이터", "의료정보표준", "헬스케어정보학"],
         description: "의료 빅데이터와 의료정보 표준화 분야의 전문가로, 헬스케어 데이터의 체계적 관리와 분석 시스템 개발에 집중하고 있습니다. 의료정보 표준화를 통한 상호운용성 향상과 데이터 기반 의료 서비스 혁신에 기여하고 있습니다.",
-        papers: ["의료 빅데이터 분석을 위한 표준화 방법론", "병원 정보 시스템의 상호운용성 향상", "전자건강기록 데이터 품질 관리 시스템"]
+        papers: ["Status of MyHealthWay and Suggestions for Widespread Implementation, Emphasizing the Utilization and Practical Use of Personal Medical Data", "Deep learning approach to detection of colonoscopic information from unstructured reports", "Shared Interoperable Clinical Decision Support Service for Drug-Allergy Interaction Checks: Implementation Study"]
     },
     {
         name: "이세영",
@@ -283,7 +283,7 @@ const professorsData = [
         email: "seyoung@kangwon.ac.kr",
         specialties: ["CPS보안", "IoT보안", "센서보안"],
         description: "융합보안 분야의 연구자로, 다학제간 융합을 통한 보안 기술 개발에 집중하고 있습니다. 새로운 보안 위협에 대응하는 혁신적인 보안 솔루션 연구를 수행하고 있습니다.",
-        papers: ["사이버-물리 시스템의 보안 위협 분석", "IoT 센서 네트워크 보안 프로토콜", "스마트 팩토리 보안 아키텍처 설계"]
+        papers: ["DIMScern: A Framework for Discerning DIMSE Services on Remote Medical Devices", "In-Vehicle Network Intrusion Detection System Using CAN Frame-Aware Features", "ErrIDS: An Enhanced Cumulative Timing Error-Based Automotive Intrusion Detection System"]
     },
     {
         name: "이효준",
@@ -294,7 +294,7 @@ const professorsData = [
         email: "gywns6298@kangwon.ac.kr",
         specialties: ["컴퓨터비전", "영상처리", "딥러닝"],
         description: "컴퓨터 비전과 딥러닝 기술의 전문가로, 고도화된 영상 처리 알고리즘과 시각 인식 시스템 개발에 집중하고 있습니다. AI 기반 영상 분석 기술을 통해 다양한 응용 분야에서의 지능형 시스템 구축에 기여하고 있습니다.",
-        papers: ["딥러닝 기반 객체 검출 알고리즘 최적화", "영상 분할을 위한 트랜스포머 모델", "실시간 영상 처리를 위한 엣지 컴퓨팅"]
+        papers: ["Joint Appearance and Motion Model With Temporal Transformer for Multiple Object Tracking", "deepGBLUP: joint deep learning networks and GBLUP framework for accurate genomic prediction of complex traits in Korean native cattle", "BAAM: Monocular 3D Pose and Shape Reconstruction With Bi-Contextual Attention Module and Attention-Guided Modeling"]
     },
     {
         name: "임정욱",
@@ -305,7 +305,7 @@ const professorsData = [
         email: "rhim8668@kangwon.ac.kr",
         specialties: ["HCI", "빅데이터분석", "학습분석"],
         description: "인간-컴퓨터 상호작용과 교육 데이터 분석 분야의 전문가로, 학습자 행동 분석과 개인화된 학습 시스템 개발에 집중하고 있습니다. 빅데이터 기술을 활용한 지능형 교육 플랫폼 구축과 학습 효과 향상 연구를 수행하고 있습니다.",
-        papers: ["학습 패턴 분석을 위한 빅데이터 플랫폼", "개인화 학습 추천 시스템 설계", "온라인 교육 효과성 측정 모델"]
+        papers: ["Using Geometric Features of Drag-and-Drop Trajectories to Understand Students' Learning", "Application of humanization to survey chatbots: Change in chatbot perception, interaction experience, and survey data quality"]
     }
 ];
 
@@ -328,7 +328,15 @@ function getFieldDisplayName(fieldValue) {
         "자연어처리": "자연어 처리",
         "코딩": "코딩",
         "금융공학": "금융공학",
-        "HCI": "HCI (인간-컴퓨터 상호작용)"
+        "HCI": "HCI (인간-컴퓨터 상호작용)",
+        "머신러닝": "머신러닝",
+        "딥러닝": "딥러닝",
+        "데이터사이언스": "데이터사이언스",
+        "빅데이터": "빅데이터",
+        "소프트웨어공학": "소프트웨어공학",
+        "임베디드시스템": "임베디드시스템",
+        "프로그래밍언어": "프로그래밍언어",
+        "시스템소프트웨어": "시스템소프트웨어"
     };
     
     return fieldMap[fieldValue] || fieldValue;

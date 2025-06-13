@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  frontend:
+    image: ${DOCKER_NAMESPACE}/yideunandhyeonjun-frontend:${TAG:-latest}
+    container_name: yideunandhyeonjun-frontend
+    ports:
+      - "8080:80"
+    restart: unless-stopped
