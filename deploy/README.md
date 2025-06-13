@@ -8,8 +8,12 @@ deploy/
 │   │   ├── docker-compose.yml
 │   │   ├── frontend.Dockerfile
 │   │   ├── .env
-│   │   ├── build-and-push.sh
-│   │   └── build-and-push.bat
+│   │   ├── build-and-push.sh   # 빌드 & 푸시
+│   │   ├── build-and-push.bat
+│   │   ├── test-local.sh       # 로컬 테스트
+│   │   ├── test-local.bat
+│   │   ├── cleanup.sh          # 환경 정리
+│   │   └── cleanup.bat
 │   └── operation/              # 운영환경 (배포용)
 │       ├── docker-compose.yml
 │       ├── .env
@@ -47,6 +51,24 @@ docker compose push
 
 # Windows
 build-and-push.bat
+```
+
+### 3. 로컬 테스트
+```bash
+# 로컬에서 컨테이너 실행 및 테스트
+./test-local.sh     # Linux/Mac
+# 또는
+test-local.bat      # Windows
+
+# 브라우저에서 http://localhost:8080 접속하여 확인
+```
+
+### 4. 환경 정리
+```bash
+# 컨테이너 중지 및 정리
+./cleanup.sh        # Linux/Mac
+# 또는
+cleanup.bat         # Windows
 ```
 
 ## 배포환경으로 파일 이동

@@ -5,5 +5,5 @@ services:
     image: ${DOCKER_NAMESPACE}/yideunandhyeonjun-frontend:${TAG:-latest}
     container_name: yideunandhyeonjun-frontend
     ports:
-      - "8080:80"
+      - "3000:80"
     restart: unless-stopped
